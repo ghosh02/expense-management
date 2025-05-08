@@ -10,7 +10,7 @@ const useGetAllEntries = () => {
     const fetchEntries = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/entry/allEntry",
+          "https://expense-management-q5fj.onrender.com/api/entry/allEntry",
           {
             withCredentials: true,
           }

@@ -9,9 +9,12 @@ const useGetTotalExpense = () => {
   useEffect(() => {
     const fetchExpense = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/entry/expense", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          "https://expense-management-q5fj.onrender.com/api/entry/expense",
+          {
+            withCredentials: true,
+          }
+        );
         if (res.data.success) {
           dispatch(setTotalExpense(res.data.totalExpense));
         }

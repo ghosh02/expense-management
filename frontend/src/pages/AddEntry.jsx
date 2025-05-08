@@ -54,7 +54,7 @@ const AddEntry = ({ onClose }) => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:4000/api/entry/create",
+        "https://expense-management-q5fj.onrender.com/api/entry/create",
         entryData,
         {
           headers: {

@@ -51,7 +51,7 @@ const Dashboard = () => {
   const logoutHandler = async () => {
     try {
       await axios.post(
-        "http://localhost:4000/api/user/logout",
+        "https://expense-management-q5fj.onrender.com/api/user/logout",
         {},
         {
           headers: {

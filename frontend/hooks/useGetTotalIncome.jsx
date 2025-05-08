@@ -9,9 +9,12 @@ const useGetTotalIncome = () => {
   useEffect(() => {
     const fetchIncome = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/api/entry/income", {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          "https://expense-management-q5fj.onrender.com/api/entry/income",
+          {
+            withCredentials: true,
+          }
+        );
         if (res.data.success) {
           dispatch(setTotalIncome(res.data.totalIncome));
         }
