@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://expense-management-q5fj.onrender.com",
+    origin: true,
     credentials: true,
   })
 );
