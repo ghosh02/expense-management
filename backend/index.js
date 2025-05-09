@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://spendly-gamma.vercel.app/",
+    origin: true,
     credentials: true,
   })
 );
