@@ -10,7 +10,9 @@ const useGetAllEntries = () => {
     const fetchEntries = async () => {
       try {
         const response = await axios.get(
-          "https://expense-management-q5fj.onrender.com/api/entry/allEntry",
+          `${
+            import.meta.env.VITE_REACT_APP_BACKEND_BASEURL
+          }/api/entry/allEntry`,
           {
             withCredentials: true,
           }

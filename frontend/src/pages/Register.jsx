@@ -26,7 +26,7 @@ const Register = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://expense-management-q5fj.onrender.com/api/user/register",
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/user/register`,
         input,
         {
           headers: {

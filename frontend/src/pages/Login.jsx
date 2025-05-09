@@ -24,7 +24,7 @@ const Login = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "https://expense-management-q5fj.onrender.com/api/user/login",
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/user/login`,
         input,
         {
           headers: {

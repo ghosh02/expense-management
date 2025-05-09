@@ -10,7 +10,7 @@ const useGetTotalExpense = () => {
     const fetchExpense = async () => {
       try {
         const res = await axios.get(
-          "https://expense-management-q5fj.onrender.com/api/entry/expense",
+          `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/entry/expense`,
           {
             withCredentials: true,
           }

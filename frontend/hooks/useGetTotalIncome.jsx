@@ -10,7 +10,7 @@ const useGetTotalIncome = () => {
     const fetchIncome = async () => {
       try {
         const res = await axios.get(
-          "https://expense-management-q5fj.onrender.com/api/entry/income",
+          `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/entry/income`,
           {
             withCredentials: true,
           }
