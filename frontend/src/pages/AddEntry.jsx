@@ -54,7 +54,7 @@ const AddEntry = ({ onClose }) => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:4000/api/entry/create",
+        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/entry/create`,
         entryData,
         {
           headers: {
